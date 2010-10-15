@@ -110,6 +110,8 @@
     <Compile Include="Eventing\Sourcing\SourcedEventArgs.cs" />
     <Compile Include="Eventing\Sourcing\SourcedEntityEvent.cs" />
     <Compile Include="Eventing\Sourcing\SourcedEventHandlerPredicate.cs" />
+    <Compile Include="Eventing\Storage\SQL\AccessQueries.cs" />
+    <Compile Include="Eventing\Storage\SQL\MsAccessEventStore.cs" />
     <Compile Include="GuidCombGenerator.cs" />
     <Compile Include="Commanding\CommandBase.cs" />
     <Compile Include="Commanding\CommandExecution\CommandExecutorWrapper.cs" />
@@ -227,7 +229,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TraceLogger.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Eventing\Storage\SQL\AccessTableCreationScript.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
